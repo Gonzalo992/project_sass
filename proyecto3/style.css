@@ -1,0 +1,137 @@
+* {
+  font-family: "Outfit", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0d192b;
+}
+
+h1 {
+  color: white;
+  font-size: 22px;
+}
+
+p {
+  font-size: 18px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container .tarjeta {
+  filter: drop-shadow(0 0 0.33rem black);
+  padding: 20px;
+  width: 350px;
+  background-color: #14253d;
+}
+.container .tarjeta .img-tar {
+  position: relative;
+}
+.container .tarjeta .img-tar .bg-img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.container .tarjeta .img-tar .middle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s ease;
+  opacity: 0;
+  border-radius: 10px;
+  background-color: rgba(0, 255, 247, 0.4);
+  color: white;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .tarjeta .img-tar .middle img {
+  width: 50px;
+  background-color: transparent;
+}
+.container .tarjeta .img-tar:hover .middle {
+  opacity: 0.8;
+}
+.container .tarjeta .titulo {
+  margin: 10px 0px 10px 0px;
+}
+.container .tarjeta .desc-tar {
+  color: #8bacda;
+  font-weight: lighter;
+}
+.container .tarjeta .detalle-tar {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.container .tarjeta .detalle-tar .eth {
+  margin: 15px 0px 20px 0px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.container .tarjeta .detalle-tar .eth img {
+  margin-right: 5px;
+}
+.container .tarjeta .detalle-tar .eth p {
+  color: #00fff7;
+  font-weight: 600;
+}
+.container .tarjeta .detalle-tar .days {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 15px 0px 20px 0px;
+}
+.container .tarjeta .detalle-tar .days img {
+  margin-right: 5px;
+}
+.container .tarjeta .detalle-tar .days p {
+  color: #8bacda;
+}
+.container .tarjeta .autor {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  margin: 20px 0px 10px 0px;
+}
+.container .tarjeta .autor img {
+  width: 30px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.container .tarjeta .autor p {
+  color: #8bacda;
+}
+.container .tarjeta .autor p .name {
+  color: white;
+}
+.container .tarjeta .autor p .name:hover {
+  color: #00fff7;
+}
+
+footer {
+  margin-top: -18px;
+}
+footer p {
+  text-align: center;
+  font-size: 11px;
+  color: #8bacda;
+}
+footer a {
+  color: #3e52a3;
+}
+
+/*# sourceMappingURL=style.css.map */

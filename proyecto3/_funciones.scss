@@ -1,0 +1,5 @@
+@mixin myflex($dflex,$jflex,$aitem){
+    display: $dflex;
+    justify-content: $jflex;
+    align-items: $aitem;
+}
